@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конфигуратор системного блока онлайн</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="scripts.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+    </style>
+</head>
+<body>  
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Процессор</h2>
+            <div class="filter-section">
+                <div class="filter">
+                    <label for="price-range">Цена</label>
+                    <input type="range" id="price-range" min="1150" max="721980" value="1150">
+                    <div class="price-values">
+                        <span>1150 ₽</span> - <span>721980 ₽</span>
+                    </div>
+                </div>
+                <div class="lineup">
+                    <h3>Линейка</h3>
+                    <label><input type="checkbox"> Intel Celeron</label><br>
+                    <label><input type="checkbox"> Intel Pentium</label><br>
+                    <label><input type="checkbox"> Intel Core i3</label><br>
+                    <label><input type="checkbox"> Intel Core i5</label><br>
+                    <label><input type="checkbox"> Intel Core i7</label><br>
+                    <label><input type="checkbox"> Intel Core i9</label><br>
+                    <label><input type="checkbox"> Ryzen 3</label><br>
+                    <label><input type="checkbox"> Ryzen 5</label><br>
+                    <label><input type="checkbox"> Ryzen 7</label><br>
+                    <label><input type="checkbox"> AMD Athlon</label><br>
+                    <label><input type="checkbox"> Pentium Gold</label><br>
+                </div>
+            </div>
+            <div class="processor-list">
+                <div class="processor-item">
+                    <img src="G5900.jpg" alt="Celeron G5900">
+                    <div class="processor-info">
+                        <p>Celeron G5900<br>Comet Lake; Intel Celeron; G5900; LGA1200; 2; 2; 3400 МГц; 2 Мб; 2; 2666 МГц; 3.0; 58 Вт; 65 Вт; 5;
+                        </p>
+                        <span>4 050 ₽</span>
+                    </div>
+                    <button class="add-button">Добавить</button>
+                </div>
+                <!-- Repeat the processor-item block for other processors -->
+                <div class="processor-item">
+                    <img src="G5905.jpg" alt="Celeron G5905">
+                    <div class="processor-info">
+                        <p>Celeron G5905<br>Comet Lake; Intel Celeron; G5900; LGA1200; 2; 2; 3400 МГц; 2 Мб; 2; 2666 МГц; 3.0; 58 Вт; 65 Вт; 5;</p>
+                        <span>6 880 ₽</span>
+                    </div>
+                    <button class="add-button">Добавить</button>
+                </div>
+                <div class="processor-item">
+                    <img src="G6900.jpg" alt="Celeron G6900">
+                    <div class="processor-info">
+                        <p>Celeron G6900<br>Comet Lake; Intel Celeron; G5900; LGA1200; 2; 2; 3400 МГц; 2 Мб; 2; 2666 МГц; 3.0; 58 Вт; 65 Вт; 5;</p>
+                        <span>6 070 ₽</span>
+                    </div>
+                    <button class="add-button">Добавить</button>
+                </div>
+                <div class="processor-item">
+                    <img src="G4400.jpg" alt="Pentium G4400">
+                    <div class="processor-info">
+                        <p>Pentium G4400<br>Comet Lake; Intel Celeron; G5900; LGA1200; 2; 2; 3400 МГц; 2 Мб; 2; 2666 МГц; 3.0; 58 Вт; 65 Вт; 5;</p>
+                        <span>4 720 ₽</span>
+                    </div>
+                    <button class="add-button">Добавить</button>
+                </div>
+                <div class="processor-item">
+                    <img src="G4560.jpg" alt="Pentium G4560">
+                    <div class="processor-info">
+                        <p>Pentium G4560<br>Comet Lake; Intel Celeron; G5900; LGA1200; 2; 2; 3400 МГц; 2 Мб; 2; 2666 МГц; 3.0; 58 Вт; 65 Вт; 5;</p>
+                        <span>8 090 ₽</span>
+                    </div>
+                    <button class="add-button">Добавить</button>
+                </div>
+                <div class="processor-item">
+                    <img src="G5400.jpg" alt="Pentium G5400">
+                    <div class="processor-info">
+                        <p>Pentium G5400<br>Comet Lake; Intel Celeron; G5900; LGA1200; 2; 2; 3400 МГц; 2 Мб; 2; 2666 МГц; 3.0; 58 Вт; 65 Вт; 5;</p>
+                        <span>8 100 ₽</span>
+                    </div>
+                    <button class="add-button">Добавить</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="logotip.png" alt="Логотип">
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">О конфигураторе</a></li>
+                <li><a href="#configurator">Конфигуратор ПК</a></li>
+                <li><a href="#delivery-payment">Доставка и оплата</a></li>
+                <li><a href="#warranty">Гарантия</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <div class="menu-search-container">
+        <div class="knopka-menu">
+            <img src="knopka-menu.png" alt='icon-menu'>
+        </div>
+        <div class="menu-search-container">
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button type="button">Search</button>
+            </div>
+            <div class="icons-container">
+                <img src="korzina.png" alt="Icon 1">
+                <img src="izbranoe.png" alt="Icon 2">
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p>Выберите компонент</p>
+            <!-- Дополнительное содержимое модального окна -->
+        </div>
+    </div>
+    
+
+    <div class="information">
+        <div class="nazvanie">
+            <span class="glavnazv">Конфигуратор системного блока онлайн</span>
+        </div>
+        <div class="obeton">
+            <ul>
+                <li>Собрать компьютер онлайн - с проверкой совместимости</li>
+                <li>Более 1000 комплектующих в конфигураторе ПК</li>
+                <li>Собрать компьютер - бесплатная сборка и быстрая доставка</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="element-item-configurator-flx">
+            <div class="icon">
+                <img src="configurator-1.png" alt="icon" class="icon-cpu">
+            </div>
+            <div class="info-cpu">
+                <div class="name-button-container">
+                    <div class="name-cpu">
+                        <span class="name">Процессор</span>
+                    </div>
+                </div>
+                
+                <button class="description-cpu-button">+ Выбрать компонент</button>
+            </div>
+        </div>
+        
+
+        <div class="element-item-configurator-flx">
+            <div class="icon">
+                <img src="configurator-2.png" alt="icon" class="icon-cpu">
+            </div>
+            <div class="info-cpu">
+                <div class="name-button-container">
+                    <div class="name-cpu">
+                        <span class="name">Охлаждение</span>
+                    </div>
+                </div>
+                
+                <button class="description-cpu-button">+ Выбрать компонент</button>
+            </div>
+        </div>
+
+
+        <div class="element-item-configurator-flx">
+            <div class="icon">
+                <img src="configurator-3.png" alt="icon" class="icon-cpu">
+            </div>
+            <div class="info-cpu">
+                <div class="name-button-container">
+                    <div class="name-cpu">
+                        <span class="name">Материнская плата</span>
+                    </div>
+                
+                
+                </div>
+                <button class="description-cpu-button">+ Выбрать компонент</button>
+            </div>
+        </div>
+        
+        
+        <div class="element-item-configurator-flx">
+            <div class="icon">
+                <img src="configurator-4.png" alt="icon" class="icon-cpu">
+            </div>
+            <div class="info-cpu">
+                <div class="name-button-container">
+                    <div class="name-cpu">
+                        <span class="name">Оперативная память</span>
+                    </div>
+                
+                
+                </div>
+                <button class="description-cpu-button">+ Выбрать компонент</button>
+            </div>
+        </div>
+
+        <div class="element-item-configurator-flx">
+            <div class="icon">
+                <img src="configurator-6.png" alt="icon" class="icon-cpu">
+            </div>
+            <div class="info-cpu">
+                <div class="name-button-container">
+                    <div class="name-cpu">
+                        <span class="name">SSD</span>
+                    </div>
+                
+                
+                </div>
+                <button class="description-cpu-button">+ Выбрать компонент</button>
+            </div>
+        </div>
+
+        <div class="element-item-configurator-flx">
+            <div class="icon">
+                <img src="configurator-9.png" alt="icon" class="icon-cpu">
+            </div>
+            <div class="info-cpu">
+                <div class="name-button-container">
+                    <div class="name-cpu">
+                        <span class="name">Жёсткий диск</span>
+                    </div>
+                
+                
+                </div>
+                <button class="description-cpu-button">+ Выбрать компонент</button>
+            </div>
+        </div>
+
+        <div class="element-item-configurator-flx">
+            <div class="icon">
+                <img src="configurator-8.png" alt="icon" class="icon-cpu">
+            </div>
+            <div class="info-cpu">
+                <div class="name-button-container">
+                    <div class="name-cpu">
+                        <span class="name">Видео-карта</span>
+                    </div>
+                
+                
+                </div>
+                <button class="description-cpu-button">+ Выбрать компонент</button>
+            </div>
+        </div>
+
+        <div class="element-item-configurator-flx">
+            <div class="icon">
+                <img src="configurator-12.png" alt="icon" class="icon-cpu">
+            </div>
+            <div class="info-cpu">
+                <div class="name-button-container">
+                    <div class="name-cpu">
+                        <span class="name">Блок питания</span>
+                    </div>
+               
+                
+                </div>
+                <button class="description-cpu-button">+ Выбрать компонент</button>
+            </div>
+        </div>  
+
+        <div class="element-item-configurator-flx">
+            <div class="icon">
+                <img src="configurator-11.png" alt="icon" class="icon-cpu">
+            </div>
+            <div class="info-cpu">
+                <div class="name-button-container">
+                    <div class="name-cpu">
+                        <span class="name">Корпус</span>
+                    </div>
+               
+                
+                </div>
+                <button class="description-cpu-button">+ Выбрать компонент</button>
+            </div>
+        </div>  
+        
+    </div>
+    <div class="price-panel">
+        
+        <div class="price-actions">
+            <div class="price-realsigma">
+                <p class="price" >Итого стоимость ПК:                </p>
+            </div>
+        </div>
+        <div class="price-actions">
+            <button class="build-button">Собрать</button>
+        </div>  
+        <div class="pricolnie-knopki">
+            <button class="print-button">Распечатать</button>
+            <button class="putin-button">Узнать мнение Путина</button>
+        
+        </div>
+    </div>
+
+    
+
+</body>
+</html>
