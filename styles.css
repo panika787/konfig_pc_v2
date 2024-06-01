@@ -1,0 +1,458 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F1F6F9;
+    color: #000000;
+    text-align: center;
+    font-size: 0.68vw;
+}
+
+.container {
+    max-width: 50vw;
+    margin-left: 9%;
+    font-size: 0.7vw;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 0.52vw;
+    max-width: 75vw;
+    border-radius: 0.52vw;
+    margin: 0 auto;
+}
+
+.knopka-menu {
+    width: 1.67vw;
+    margin-right: 0.52vw;
+    cursor: pointer;
+}
+
+.menu-search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.52vw;
+    width: 100%;
+    margin-left: 5vw;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 30vw;
+    
+}
+
+.search-container input[type="text"] {
+    padding: 0.52vw;
+    border-radius: 0.42vw;
+    color: #B9B3B3;
+    border: 0.1px solid #B9B3B3;
+    font-size: 0.83vw;
+    width: 100%; /* This ensures the input takes the full width of its container */
+}
+
+.search-container button {
+    padding: 0.52vw 1.04vw;
+    border: none;
+    border-radius: 0.42vw;
+    background-color: #6096BA;
+    color: #E7ECEF;
+    font-size: 0.83vw;
+    cursor: pointer;
+    margin-left: 0.52vw;
+}
+
+.icons-container {
+    display: flex;
+    align-items: center;
+    margin-right: 59vw;
+}
+
+.icons-container img {
+    width: 2.5vw;
+    height: auto;
+    margin-left: 1vw;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.04vw;
+}
+
+nav ul li {
+    margin-right: 1.04vw;
+}
+
+nav ul li a {
+    font-size: 1.04vw;
+    text-decoration: none;
+    cursor: pointer;
+    color: #487799;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -0.16vw;
+    left: 0;
+    width: 0;
+    height: 0.13vw;
+    background-color: #487799;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.logo-container img {
+    height: 2.34vw;
+    transition: transform 0.2s ease;
+}
+
+.logo-container img:hover {
+    transform: scale(1.1);
+}
+
+.glavnazv {
+    font-size: 1.3vw;
+}
+
+.information {
+    font-size: 0.78vw;
+    margin: 0 10vw;
+    text-align: left;
+}
+
+section {
+    padding: 1.04vw;
+}
+
+footer {
+    background-color: #6096BA;
+    color: #E0DDD6;
+    text-align: center;
+    padding: 0.52vw;
+    border-radius: 0.52vw;
+    margin-top: 1.04vw;
+    max-width: 75vw;
+    margin: 0 auto;
+}
+
+.element-item-configurator-flx {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 0; /* Убираем нижний отступ */
+    padding: 0.52vw; /* 10px to vw conversion */
+    border-radius: 0.42vw; /* 8px to vw conversion */
+    border: 1px solid #ccc; /* Добавляем границу */
+}
+
+.element-item-configurator-flx + .element-item-configurator-flx {
+    border-top: none; /* Убираем верхнюю границу, чтобы не было дублирования */
+}
+
+.element-item-configurator-flx:last-child {
+    margin-bottom: 1.04vw; /* 20px to vw conversion для нижнего отступа у последнего элемента */
+}
+
+
+.icon {
+    margin-right: 0.52vw;
+    margin-bottom: 1.56vw;
+}
+
+.icon-cpu {
+    max-width: 2.71vw;
+    height: auto;
+}
+
+.info-cpu {
+    text-align: left;
+}
+
+.name-button-container {
+    display: flex;
+    align-items: center;
+}
+
+.name-cpu {
+    font-size: 0.94vw;
+    font-weight: bold;
+}
+
+.description-cpu-button {
+    background-color: #F1F6F9;
+    border: none, #555454;
+    border-radius: 0.52vw;
+    padding: 10px 5px;
+    width: 130px;
+    cursor: pointer;
+    margin-left: 38vw;
+    transition: background-color 0.3s ease;
+}
+
+.description-cpu-button:hover {
+    border-color: #6096BA;
+}
+
+.price-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 15.63vw; /* 300px to vw conversion */
+    height: 18.31vw; /* 390px to vw conversion */
+    background: #A3CEF1;
+    border-radius: 0.52vw; /* 10px to vw conversion */
+    padding: 1.04vw; /* 20px to vw conversion */
+    box-sizing: border-box;
+    overflow: hidden; /* Ensure no overflow */
+    margin-left: 65vw;
+    margin-top: -50vw;
+}
+
+.price-info {
+    width: 100%;
+    text-align: left;
+    font-family: 'Nunito';
+    font-size: 1.25vw; /* 24px to vw conversion */
+    line-height: 1.67vw; /* 32px to vw conversion */
+    color: #000000;
+    word-wrap: break-word; /* Ensure text wraps within the container */
+}
+
+.price-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.52vw; /* 10px to vw conversion */
+    margin-top: 1.04vw; /* 20px to vw conversion */
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.price-realsigma {
+    text-align: left;
+    font-size: 1.25vw; /* 24px to vw conversion */
+    color: #000000;
+    word-wrap: break-word; /* Ensure text wraps within the container */
+}
+.pricolnie-knopki{
+    float: left; 
+}
+.price {
+    font-size: 1.5vw;
+}
+.build-button, .clear-button, .print-button, .putin-button {
+    width: 100%;
+    height: 2.60vw; /* 50px to vw conversion */
+    background: #274C77;
+    border-radius: 0.52vw; /* 10px to vw conversion */
+    color: #FFFFFF;
+    font-family: 'Nunito';
+    font-size: 1.25vw; /* 24px to vw conversion */
+    cursor: pointer;
+    border: none;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.9); /* White with transparency */
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 2vw;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 1vw;
+}
+
+/* The Close Button */
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Дополним стили в файле styles.css */
+.processor-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Примерный отступ между процессором и списком */
+}
+
+.processor-info {
+    display: flex;
+    
+    align-items: center; /* Выравнивание элементов в правом углу */
+}
+
+.add-button {
+    background-color: #6096BA;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #487799;
+}
+
+.price-and-button {
+    display: flex;
+    align-items: center;
+}
+
+
+.clear-button {
+    background: rgba(255, 255, 255, 0.5);
+    color: #555454;
+}
+
+.print-button, .putin-button {
+    height: 2.08vw; /* 40px to vw conversion */
+    background: none;
+    color: #000000;
+    font-size: 0.94vw; /* 18px to vw conversion */
+}
+
+.print-button {
+    text-align: left;
+}
+
+.putin-button {
+    text-align: left;
+    color: #030303;
+}
+
+
+
+
+
+
+
+
+
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; /* Adjusted width to accommodate filter section */
+    max-height: 80%; /* Adjusted maximum height */
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.filter-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    width: 25%; /* Occupy one-fourth of the width */
+    position: fixed; /* Fix the position */
+    left: 10; /* Align to the left side */
+    top: 10; /* Align to the top */
+    height: 100%; /* Occupy full height */
+    max-width: 25vw; /* Limit to 25% of viewport width */
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+}
+
+.filter, .lineup {
+    width: 45%;
+}
+
+.price-values {
+    display: flex;
+    justify-content: space-between;
+}
+
+.processor-list {
+    display: flex;
+    flex-direction: column;
+    width: 75%; /* Occupy three-fourths of the width */
+    margin-left: 25%; /* Leave space for the filter section */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.processor-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.processor-info {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.add-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}
