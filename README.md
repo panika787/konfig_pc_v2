@@ -1,0 +1,1 @@
+# konfig_pc_v2
